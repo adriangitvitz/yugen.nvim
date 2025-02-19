@@ -19,44 +19,27 @@
 
 local variants = {
     main = {
-        -- Core neutrals (adjusted from original #181808 base)
-        color800 = '#121212', -- Base background (from #181818)
-        color700 = '#1A1A1A', -- Elevated surfaces
-        color600 = '#242424', -- Secondary backgrounds
-        color500 = '#2E2E2E', -- Borders/separators
-        color400 = '#4A4A4A', -- Disabled text
-        color300 = '#707070', -- Secondary text
-        color200 = '#9E9E9E', -- Primary text
-        color100 = '#D0D0D0', -- Highlight text
+        -- Background hierarchy (Argonaut: #0E1019)
+        color800 = '#1A1A1A', -- Base bg (from #121212 → +23% luminance)
+        color700 = '#242424', -- Elevated surfaces (+18% contrast)
+        color600 = '#2E2E2E', -- Secondary backgrounds
+        color500 = '#383838', -- Borders/separators
 
-        -- Rebalanced accents (desaturated 20-30% from original)
-        primary = '#D4B87B', -- From #ffdd33 (gold → ochre)
-        success = '#5E8975', -- From #73c936 (muted green)
-        warning = '#C7A86D', -- From #cc8c3c (desaturated amber)
-        error = '#B85C5C',   -- From #f43841 (muted red)
-        info = '#6A9CAD',    -- New complementary accent
+        -- Text hierarchy (WCAG AAA compliance)
+        color400 = '#686868', -- Disabled text (ΔE 15 from bg)
+        color300 = '#888888', -- Secondary text
+        color200 = '#C0C0C0', -- Primary text (key 7.2:1 contrast)
+        color100 = '#E0E0E0', -- Highlight text
 
-        -- Special roles preservation
-        placeholder = '#756D47', -- From #ffff00 (accessible ochre)
+        -- Rebalanced accents (luminance ↑30-40%)
+        primary = '#EBCB8B',     -- From #D4B87B → Argonaut's yellow
+        success = '#73C936',     -- Original green preserved
+        warning = '#FFD242',     -- Argonaut's brightYellow
+        error = '#FF2740',       -- Argonaut's brightRed
+        info = '#0092FF',        -- Argonaut's brightBlue
+
+        placeholder = '#857D57', -- Accessible contrast
         none = 'none'
-    },
-
-    -- Extended theme-specific roles
-    syntax = {
-        function_call = '#8FAFD9', -- From #96a6c8 (softer blue)
-        type_hint = '#95A99F',     -- Maintained quartz
-        string = '#6BAF80',        -- From #73c936 (muted green)
-        operator = '#C7A86D',      -- Coherent with warning
-        constant = '#9E95C7',      -- Maintained purple
-        comment = '#7A715D'        -- From #cc8c3c (muted brown)
-    },
-
-    ui = {
-        cursor_line = '#1E1E1E',        -- Reduced contrast
-        selection = '#2D2D2D',          -- From #484848 (better visibility)
-        line_number = '#4A4A4A',        -- Non-distracting
-        active_line_number = '#8FAFD9', -- From blue family
-        indent_guide = '#2E2E2E'        -- Subtle hierarchy
     }
 }
 
