@@ -153,7 +153,7 @@ function M.get(config)
         ['@constant'] = { link = ' Constant' },
         ['@constructor'] = { fg = p.primary, style = 'bold' },
         ['field'] = { fg = p.color200 },
-        ['@function.builtin'] = { fg = p.color300 },
+        ['@function.builtin'] = { fg = p.primary },
         ['@function'] = { link = 'Function' },
         ['@function.call'] = { fg = p.primary },
         TSInclude = { fg = p.color200 },
