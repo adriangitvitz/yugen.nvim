@@ -158,7 +158,7 @@ function M.get(config)
         ['@function.call'] = { fg = p.primary },
         TSInclude = { fg = p.color200 },
         ['@keyword.rescript'] = { fg = p.primary },
-        ['@keyword'] = { link = 'Keyword' },
+        ['@keyword'] = { link = 'Keyword', fg = p.primary, style = 'bold' },
         ['@keyword.return'] = { fg = p.color300 },
         ['@keyword.function'] = { fg = p.color300 },
         ['@keyword.operator'] = { fg = p.color400 },
