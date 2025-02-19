@@ -151,7 +151,7 @@ function M.get(config)
         ['@constant.falsy'] = { fg = p.primary },
         ['@constant.rescript'] = { fg = p.primary },
         ['@constant'] = { link = ' Constant' },
-        ['@constructor'] = { fg = p.color500 },
+        ['@constructor'] = { fg = p.primary, style = 'bold' },
         ['field'] = { fg = p.color200 },
         ['@function.builtin'] = { fg = p.color300 },
         ['@function'] = { link = 'Function' },
@@ -177,7 +177,7 @@ function M.get(config)
         ['@tag.attribute'] = { fg = p.color300, style = styles.italic },
         ['@text'] = { fg = p.color200 },
         ['@title'] = { fg = groups.headings.h1, style = 'bold' },
-        ['@type'] = { link = 'Type' },
+        ['@type'] = { fg = p.primary, style = 'bold' },
         ['@type.builtin'] = { link = 'Type' },
         TSURI = { fg = groups.link },
 

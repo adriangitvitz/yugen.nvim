@@ -32,7 +32,7 @@ local variants = {
         color100 = '#F0F0F0', -- Highlight text
 
         -- Rebalanced accents (CIEDE2000 > 15 from backgrounds)
-        primary = '#FFD700',     -- Gold (from #EBCB8B → +30% luminance)
+        primary = '#FFD700',
         success = '#70C040',     -- Vibrant green (from #73C936)
         warning = '#FFB347',     -- Dark orange (from #FFD242)
         error = '#FF5050',       -- High-contrast red (from #FF2740)
