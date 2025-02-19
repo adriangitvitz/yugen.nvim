@@ -28,10 +28,10 @@ yugen.command = {
     b = { fg = palette.color100, bg = palette.color600 },
 }
 
-yugen.inactive = {
-    a = { fg = palette.blueGray3, bg = palette.background1, gui = 'bold' },
-    b = { fg = palette.blueGray3, bg = palette.background1 },
-    c = { fg = palette.blueGray3, bg = palette.none },
-}
+-- yugen.inactive = {
+--     a = { fg = palette.blueGray3, bg = palette.background1, gui = 'bold' },
+--     b = { fg = palette.blueGray3, bg = palette.background1 },
+--     c = { fg = palette.blueGray3, bg = palette.none },
+-- }
 
 return yugen
