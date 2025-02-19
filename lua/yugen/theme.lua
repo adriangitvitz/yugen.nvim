@@ -91,7 +91,7 @@ function M.get(config)
         Repeat = { fg = p.color200 },
         Label = { fg = p.color200 },
         Operator = { fg = p.color400 },
-        Keyword = { fg = p.color400 },
+        Keyword = { fg = p.primary },
         Exception = { fg = p.color200 },
 
         PreProc = { fg = p.color200 },
