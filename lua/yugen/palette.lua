@@ -33,11 +33,12 @@ local variants = {
 
         -- Rebalanced accents (CIEDE2000 > 15 from backgrounds)
         primary = '#FFD700',
-        success = '#70C040',        -- Vibrant green (from #73C936)
-        warning = '#FFB347',        -- Dark orange (from #FFD242)
-        error = '#FF5050',          -- High-contrast red (from #FF2740)
-        info = '#00A8FF',           -- Bright azure
+        success = '#70C040', -- Vibrant green (from #73C936)
+        warning = '#FFB347', -- Dark orange (from #FFD242)
+        error = '#FF5050',   -- High-contrast red (from #FF2740)
+        info = '#00A8FF',    -- Bright azure
 
+        builtin = '#b4d4cf',
         placeholderstr = '#e8b589', -- High-contrast ochre
         placeholder = '#202020',
         none = 'none'
