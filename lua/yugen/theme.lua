@@ -170,7 +170,7 @@ function M.get(config)
         ['@punctuation.delimiter'] = { fg = groups.punctuation },
         ['@punctuation.special'] = { fg = groups.punctuation },
         ['@punctuation.bracket'] = { fg = p.color400 },
-        ['@string'] = { fg = p.warning },
+        ['@string'] = { fg = p.color200 },
         ['@string.escape'] = { fg = p.color100 },
         ['@tag'] = { fg = p.primary },
         ['@tag.delimiter'] = { fg = p.color400 },
