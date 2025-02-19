@@ -38,8 +38,8 @@ local variants = {
         error = '#FF5050',   -- High-contrast red (from #FF2740)
         info = '#00A8FF',    -- Bright azure
 
-        builtin = '#b4d4cf',
-        placeholderstr = '#f3be7c', -- High-contrast ochre
+        builtin = '#f3be7c',
+        placeholderstr = '#e8b589', -- High-contrast ochre
         placeholder = '#202020',
         none = 'none'
     }
