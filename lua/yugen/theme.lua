@@ -33,8 +33,8 @@ function M.get(config)
         diffRemoved = { link = 'DiffDelete' },
         Directory = { fg = p.color300, bg = p.none },
         ErrorMsg = { fg = p.error, style = 'bold' },
-        FloatBorder = { bg = '#1E1E1E', fg = p.color500 }, -- Non-transparent
-        FloatTitle = { fg = p.color200 },
+        FloatBorder = { fg = p.info }, -- Use your 'info' color (#00A8FF)
+        FloatTitle = { fg = p.info, bold = true },
         FoldColumn = { fg = p.color200 },
         Folded = { fg = p.color200, bg = groups.panel },
         IncSearch = { fg = p.color200, bg = p.color600 },
