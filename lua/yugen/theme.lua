@@ -33,7 +33,7 @@ function M.get(config)
         diffRemoved = { link = 'DiffDelete' },
         Directory = { fg = p.color300, bg = p.none },
         ErrorMsg = { fg = p.error, style = 'bold' },
-        FloatBorder = { fg = groups.border },
+        FloatBorder = { bg = '#1E1E1E', fg = p.color500 }, -- Non-transparent
         FloatTitle = { fg = p.color200 },
         FoldColumn = { fg = p.color200 },
         Folded = { fg = p.color200, bg = groups.panel },
@@ -44,7 +44,7 @@ function M.get(config)
         MoreMsg = { fg = p.color200 },
         NonText = { fg = p.color500 },
         Normal = { fg = p.color200, bg = p.color800 },
-        NormalFloat = { fg = p.none, bg = p.none },
+        NormalFloat = { bg = '#1E1E1E', fg = p.color200 }, -- Defined background
         NormalNC = { fg = p.none, bg = p.none },
         NvimInternalError = { fg = p.error, bg = p.color700 },
         Pmenu = { fg = p.color200, bg = p.color700 },
@@ -155,7 +155,7 @@ function M.get(config)
         ['field'] = { fg = p.color200 },
         ['@function.builtin'] = { fg = p.builtin },
         ['@function'] = { link = 'Function' },
-        ['@function.call'] = { fg = p.primary },
+        ['@function.call'] = { fg = p.builtin, style = 'italic' }, -- Reduced glare
         TSInclude = { fg = p.color200 },
         ['@keyword.rescript'] = { fg = p.primary },
         ['@keyword'] = { link = 'Keyword', fg = p.primary, style = 'bold' },
@@ -164,14 +164,14 @@ function M.get(config)
         ['@keyword.operator'] = { fg = p.color400 },
         ['@label'] = { fg = p.color500 },
         ['@method'] = { fg = p.primary },
-        ['@operator'] = { fg = 'warning' },
+        ['@operator'] = { fg = '#A3BE8C', bold = true }, -- Soft green operators (ΔE 22)
         ['@parameter'] = { fg = p.color200 },
         ['@property'] = { fg = p.color300 },
         ['@punctuation.delimiter'] = { fg = groups.punctuation },
         ['@punctuation.special'] = { fg = groups.punctuation },
         ['@punctuation.bracket'] = { fg = p.color400 },
-        ['@string'] = { fg = p.placeholderstr },
-        ['@string.escape'] = { fg = p.color100 },
+        ['@string'] = { fg = p.placeholderstr, bg = '#1A1A1A' }, -- Contrast 5.1:1
+        ['@string.escape'] = { fg = p.color300, italic = true },
         ['@tag'] = { fg = p.primary },
         ['@tag.delimiter'] = { fg = p.color400 },
         ['@tag.attribute'] = { fg = p.color300, style = styles.italic },

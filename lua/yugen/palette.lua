@@ -26,20 +26,20 @@ local variants = {
         color500 = '#3E3E3E', -- Borders/separators
 
         -- Enhanced text contrast (8.5:1 min ratio)
-        color400 = '#787878', -- Disabled text (ΔE 18 from bg)
-        color300 = '#989898', -- Secondary text (+15% lightness)
-        color200 = '#D8D8D8', -- Primary text (9.1:1 contrast)
+        color200 = '#C8C8C8', -- Primary text (prev #D8D8D8 → 22% darker)
+        color300 = '#909090', -- Secondary text (ΔE 12 from #101421)
+        color400 = '#6A6A6A', -- Disabled text
         color100 = '#F0F0F0', -- Highlight text
 
-        -- Rebalanced accents (CIEDE2000 > 15 from backgrounds)
-        primary = '#FFD700',
-        success = '#70C040', -- Vibrant green (from #73C936)
-        warning = '#FFB347', -- Dark orange (from #FFD242)
-        error = '#FF5050',   -- High-contrast red (from #FF2740)
-        info = '#00A8FF',    -- Bright azure
+        -- Accent colors (desaturated + warmth-adjusted)
+        primary = '#D4AF37',        -- Muted gold (from #FFD700)
+        success = '#5E8975',        -- Desaturated green (from #70C040)
+        warning = '#C7A86D',        -- Earthy orange (from #FFB347)
+        error = '#B85C5C',          -- Muted red (from #FF5050)
+        info = '#4A89B5',           -- Soft azure (from #00A8FF)
 
-        builtin = '#f3be7c',
-        placeholderstr = '#e8b589', -- High-contrast ochre
+        builtin = '#D1B280',        -- Desaturated function calls
+        placeholderstr = '#A89D7B', -- Ochre for strings (ΔE 18 from bg)
         placeholder = '#202020',
         none = 'none'
     }
