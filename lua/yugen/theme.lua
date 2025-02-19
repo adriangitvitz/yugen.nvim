@@ -164,7 +164,7 @@ function M.get(config)
         ['@keyword.operator'] = { fg = p.color400 },
         ['@label'] = { fg = p.color500 },
         ['@method'] = { fg = p.primary },
-        ['@operator'] = { fg = 'color400' },
+        ['@operator'] = { fg = 'warning' },
         ['@parameter'] = { fg = p.color200 },
         ['@property'] = { fg = p.color300 },
         ['@punctuation.delimiter'] = { fg = groups.punctuation },

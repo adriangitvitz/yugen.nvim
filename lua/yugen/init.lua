@@ -16,7 +16,7 @@ local config = {
         border = 'color600',
         comment = 'color500',
         link = 'color200',
-        punctuation = 'color500',
+        punctuation = 'warning',
 
         error = 'error',
         hint = 'success',
