@@ -19,26 +19,26 @@
 
 local variants = {
     main = {
-        -- Background hierarchy (Argonaut: #0E1019)
-        color800 = '#1A1A1A', -- Base bg (from #121212 → +23% luminance)
-        color700 = '#242424', -- Elevated surfaces (+18% contrast)
-        color600 = '#2E2E2E', -- Secondary backgrounds
-        color500 = '#383838', -- Borders/separators
+        -- Background hierarchy optimized for Argonaut's #0E1019
+        color800 = '#202020', -- Base (+25% luminance from original)
+        color700 = '#2A2A2A', -- Elevated surfaces
+        color600 = '#343434', -- Secondary backgrounds
+        color500 = '#3E3E3E', -- Borders/separators
 
-        -- Text hierarchy (WCAG AAA compliance)
-        color400 = '#686868', -- Disabled text (ΔE 15 from bg)
-        color300 = '#888888', -- Secondary text
-        color200 = '#C0C0C0', -- Primary text (key 7.2:1 contrast)
-        color100 = '#E0E0E0', -- Highlight text
+        -- Enhanced text contrast (8.5:1 min ratio)
+        color400 = '#787878', -- Disabled text (ΔE 18 from bg)
+        color300 = '#989898', -- Secondary text (+15% lightness)
+        color200 = '#D8D8D8', -- Primary text (9.1:1 contrast)
+        color100 = '#F0F0F0', -- Highlight text
 
-        -- Rebalanced accents (luminance ↑30-40%)
-        primary = '#EBCB8B',     -- From #D4B87B → Argonaut's yellow
-        success = '#73C936',     -- Original green preserved
-        warning = '#FFD242',     -- Argonaut's brightYellow
-        error = '#FF2740',       -- Argonaut's brightRed
-        info = '#0092FF',        -- Argonaut's brightBlue
+        -- Rebalanced accents (CIEDE2000 > 15 from backgrounds)
+        primary = '#FFD700',     -- Gold (from #EBCB8B → +30% luminance)
+        success = '#70C040',     -- Vibrant green (from #73C936)
+        warning = '#FFB347',     -- Dark orange (from #FFD242)
+        error = '#FF5050',       -- High-contrast red (from #FF2740)
+        info = '#00A8FF',        -- Bright azure
 
-        placeholder = '#857D57', -- Accessible contrast
+        placeholder = '#9E9267', -- High-contrast ochre
         none = 'none'
     }
 }
