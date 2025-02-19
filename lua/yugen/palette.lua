@@ -39,7 +39,7 @@ local variants = {
         info = '#00A8FF',    -- Bright azure
 
         builtin = '#b4d4cf',
-        placeholderstr = '#e8b589', -- High-contrast ochre
+        placeholderstr = '#f3be7c', -- High-contrast ochre
         placeholder = '#202020',
         none = 'none'
     }
